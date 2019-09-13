@@ -18,4 +18,5 @@ Route::get('/', function () {
 
 Route::get('pelicula/{genero}', 'PeliculaController@index'); 
 
+Route::resource('cargabip', 'CargaBipController');
 
