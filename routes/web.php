@@ -15,8 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/welcome', function () {
+    return view('welcome');
+});
 
-Route::get('pelicula/{genero}', 'PeliculaController@index'); 
-
+Route::get('pelicula/{genero}', 'PeliculaController@index');
 Route::resource('cargabip', 'CargaBipController');
+
+
 
