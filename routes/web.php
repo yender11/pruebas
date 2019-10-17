@@ -22,5 +22,7 @@ Route::get('/welcome', function () {
 Route::get('pelicula/{genero}', 'PeliculaController@index');
 Route::resource('cargabip', 'CargaBipController');
 
+Route::get('generate-pdf','PdfController@generarPdf');
+
 
 
